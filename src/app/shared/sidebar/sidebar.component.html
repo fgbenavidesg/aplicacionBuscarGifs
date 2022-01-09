@@ -1,0 +1,16 @@
+
+ <!-- bg-dark oscuro el fondo -->
+  <!-- border-right borde a la derecha -->
+  <div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light"> gifs-app</h3>
+    <hr class="text-white">
+    <div class="list-group list-reset" >
+      <a href="#" 
+        class="list-group-item list-group-item-action"
+        *ngFor="let history of historial"
+         (click)="buscar(history)"   
+        >
+          {{history |titlecase}}
+      </a>
+    </div>
+  </div>
